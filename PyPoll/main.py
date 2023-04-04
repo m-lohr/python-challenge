@@ -80,3 +80,21 @@ with open(election_data, encoding = "utf-8") as csvfile:
     print("-----------------")
 
 
+# Set variable for output file
+output_file = os.path.join("C:/Users/Michael/Desktop/bootcamp/python-challenge/PyPoll", "Analysis", "Poll_Results.txt")
+
+#  Open the output file
+with open(output_file, "w") as datafile:
+
+    # Write to txt file
+    datafile.write("Election Results \n")
+    datafile.write("----------------- \n")
+    datafile.write("Total Votes: " + str(total_votes) + "\n")
+    datafile.write("----------------- \n")
+    datafile.write(str(cand_ind[1]) + ": " + str(percent1) + "% (" + str(cand1) + ") \n")
+    datafile.write(str(cand_ind[2]) + ": " + str(percent2) + "% (" + str(cand2) + ") \n")
+    datafile.write(str(cand_ind[3]) + ": " + str(percent3) + "% (" + str(cand3) + ") \n")
+    datafile.write("----------------- \n")
+    datafile.write("Winner: " + str(winner) + "\n")
+    datafile.write("----------------- \n")
+
