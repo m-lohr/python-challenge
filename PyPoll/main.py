@@ -12,13 +12,6 @@ county = []
 candidate = []
 cand_ind = []
 
-#def count(votes)
-#    for i in range(len(votes)):
-#        counter = 0
-#        if candidate[i] == candidate[i + 1]:
-#            counter = counter + 1
-#    return counter
-
 # Read csv
 with open(election_data, encoding = "utf-8") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
@@ -56,16 +49,6 @@ with open(election_data, encoding = "utf-8") as csvfile:
 
     # Find candidate with most votes
     winner = mode(candidate)
-
-    # Count Stockham votes
-    #count1 = candidate.count("Charles Casper Stockham")
-    #percent1 = round(((count1/total_votes) * 100), 3)
-
-    # Count DeGette votes
-    #count2 = candidate.count("Diana DeGette")
-
-    # Count Doane votes
-    #count3 = candidate.count("Raymon Anthony Doane")
 
     # Print results
     print("Election Results")
