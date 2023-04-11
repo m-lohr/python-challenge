@@ -4,7 +4,7 @@ import numpy
 from statistics import mode
 
 
-election_data = os.path.join("C:/Users/Michael/Desktop/bootcamp/python-challenge/PyPoll", "Resources", "election_data.csv")
+election_data = os.path.join(r"./Resources/election_data.csv")
 
 # Lists to store data
 voterID = []
@@ -64,7 +64,7 @@ with open(election_data, encoding = "utf-8") as csvfile:
 
 
 # Set variable for output file
-output_file = os.path.join("C:/Users/Michael/Desktop/bootcamp/python-challenge/PyPoll", "Analysis", "Poll_Results.txt")
+output_file = os.path.join(r"./Analysis/Poll_Results.txt")
 
 #  Open the output file
 with open(output_file, "w") as datafile:

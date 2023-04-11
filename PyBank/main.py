@@ -3,7 +3,7 @@ import csv
 import numpy
 
 
-budget_data = os.path.join("C:/Users/Michael/Desktop/bootcamp/python-challenge/PyBank/Resources/budget_data.csv")
+budget_data = os.path.join(r"./Resources/budget_data.csv")
 
 # Lists to store data
 month = []
@@ -95,7 +95,7 @@ with open(budget_data, encoding = "utf-8") as csvfile:
     print("Greatest Decrease in Profits: " + str(month[y]) + " ($" + str(min(change_profitLoss)) + ")")
 
 # Set variable for output file
-output_file = os.path.join("C:/Users/Michael/Desktop/bootcamp/python-challenge/PyBank/Analysis/financial_analysis.txt")
+output_file = os.path.join(r"./Analysis/financial_analysis.txt")
 
 #  Open the output file
 with open(output_file, "w") as datafile:
